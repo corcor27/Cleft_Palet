@@ -315,7 +315,6 @@ def convert3Dxyz_2Dxy_zIntensity_all(database_path, outdir, P, N = 128, k = 10, 
         # Creates PIL image
         img = Image.fromarray(cp.uint8(intensity2Dv2 * 255) , 'L')
         img.save(filename2a)
-        break
         '''
         xy_vals = getCustom_xyValuesV2(N, max3d, min3d)
 
@@ -333,8 +332,7 @@ def convert3Dxyz_2Dxy_zIntensity_all(database_path, outdir, P, N = 128, k = 10, 
         # Creates PIL image
         img = Image.fromarray(np.uint8(intensity2Dv3 * 255) , 'L')
         img.save(filename2b)
-        '''
-             
+        """
         
 # ===================================================================================================================== # 
 # ## CALL FUNCTION TO COMPUTE 3D-2D FOR ALL DATABASE MODELS
